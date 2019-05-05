@@ -17,12 +17,56 @@ a {
 } */ 
 
 
+.navBar {
+    width: 150px;
+    margin-left: 295px;
+    float: left;
+    text-align: left;
+    background: #4aaaa5;
+    color: #ffffff;
+}
+
+.navBar2 {
+    margin-right: 280px;
+    text-align: right;
+    float: right;
+    background: #ffffff;
+}
+
+
+
+body {
+    background: #8e9eab;  /* fallback for old browsers */
+    background: -webkit-linear-gradient(to right, #eef2f3, #8e9eab);  /* Chrome 10-25, Safari 5.1-6 */
+    background: linear-gradient(to right, #eef2f3, #8e9eab); /* W3C, IE 10+/ Edge, Firefox 16+, Chrome 26+, Opera 12+, Safari 7+ */
+    margin: 0;
+}
+
+td {
+    position: relative;
+    width: 100%;
+}
+
+/* tr {
+    position: relative;
+    width: 50%;
+} */
+
+h1 {
+    background: #ffffff;
+    color: #4aaaa5;
+    /* padding: 0; */
+}
+
+
 ul {
   list-style-type: none;
+  width: 100%;
   margin: 0;
   padding: 0;
   overflow: hidden;
-  background-color: #333;
+  background: #ffffff;
+  color: #777777;
 }
 
 li {
@@ -31,7 +75,7 @@ li {
 
 li a {
   display: block;
-  color: white;
+  color: #777777;
   text-align: center;
   padding: 14px 16px;
   text-decoration: none;
@@ -39,19 +83,56 @@ li a {
 
 /* Change the link color to #111 (black) on hover */
 li a:hover {
-  background-color: #111;
+  background-color: #4aaaa5;
+  color: white;
 }
 
 p {
-    display: inline;
-    align-content: top;
-    /* float: top; */
+    /* display: inline; */
+    /* align-content: top; */
+    padding: 1%;
+    margin: auto;
 }
 
 img { 
-    display: inline-block;
-    box-align: top;
+    /* display: inline-block; */
+    /* box-align: top; */
+    /* float: left; */
+    padding-right: 2%;
+    padding-bottom: 2%;
+    /* position: relative; */
+    /* width: 50%; */
 }
+
+.mainSection { 
+    background: #ffffff;
+    border: 2px solid #dddddd;
+    margin: auto;
+    padding: 2%;
+    margin-top: 2%;
+    margin-bottom: 2%;
+    width: 960px;
+    text-align: left;
+}
+
+.far { 
+    color: white;
+}
+
+header {
+    background: #4aaaa5;
+    width: 10%;
+    height: 40px;
+    text-align: center;
+    color: #ffffff;
+    position: absolute;
+    top: 70%;
+    z-index: 5;
+    width: 100%;
+    
+}
+
+
 
 footer {
     display: block;
@@ -62,6 +143,16 @@ footer {
     width: 100%;
     background-color: #666666;
     color: #777777;
-    text-align: center;
+    text-align: bottom;
+    height: 5%;
+    border-top: 5px solid #4aaaa5;
+    padding: 10px;
+    
+}
+
+.clearfix::after {
+    content: "";
+    display: block;
+    clear: both;
 }
 
