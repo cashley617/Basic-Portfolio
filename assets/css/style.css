@@ -74,7 +74,7 @@ input[type=button], input[type=submit] {
   width: 10%;
 }
 
-li {
+/* li {
   float: left;
 }
 
@@ -89,7 +89,8 @@ li a {
 li a:hover {
   background-color: #4aaaa5;
   color: white;
-}
+
+} */
 
 p {
     align-content: top;
@@ -113,7 +114,7 @@ textarea {
     border-color: #cccccc;
 }
 
-ul {
+/* ul {
   list-style-type: none;
   width: 100%;
   margin: 0;
@@ -122,6 +123,11 @@ ul {
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
   font-family: 'Georgia', Times, Georgia, 'Times New Roman', Times, serif;
+} */
+
+.active {
+    position: center;
+    margin-right: 295px;
 }
 
 .mainSection { 
@@ -138,7 +144,7 @@ ul {
     text-align: left;
 }
 
-.navBar {
+/* .navBar {
     width: 150px;
     margin-left: 295px;
     float: left;
@@ -157,11 +163,54 @@ ul {
     float: right;
     background: #ffffff;
     color: #777777;
-}
+} */
+
+/* span:not(:first-child)::after {
+    content: " | ";
+    color: #777777;
+    display: inline-block; 
+    float: right;
+}  */
+
+/* .navBar-spacer {
+    content: " | ";
+    color: #777777;
+    float: right;
+} */
 
 .portfolioBox {
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
+}
+
+.spacer {
+    float: right;
+    position: center;
+    margin: 0;
+}
+
+.topnav {
+  margin: 0;
+  padding: 0;
+  overflow: hidden;
+  background: #ffffff;
+  border-bottom: 2px solid #cccccc;
+  font-family: 'Georgia', Times, Georgia, 'Times New Roman', Times, serif;
+}
+
+.topnav2 a {
+    width: 100px;
+    display: block;
+    color: #777777;
+    text-align: center;
+    padding: 14px 16px;
+    text-decoration: none;
+    float: right;
+}
+
+.topnav2 a:hover {
+    background-color: #4aaaa5;
+    color: white;
 }
 
 #aboutMe {
@@ -170,3 +219,11 @@ ul {
     height: 200px;
     width: 175px;
 }
+
+#label {
+    float: left;
+    background-color: #4aaaa5;
+    color: white;
+    margin-left: 295px;
+}
+
