@@ -7,7 +7,6 @@ body {
 }
 
 footer {
-    /* display: block; */
     position: fixed;
     left: 0;
     bottom: 0;
@@ -74,24 +73,6 @@ input[type=button], input[type=submit] {
   width: 10%;
 }
 
-/* li {
-  float: left;
-}
-
-li a {
-  display: block;
-  color: #777777;
-  text-align: center;
-  padding: 14px 16px;
-  text-decoration: none;
-}
-
-li a:hover {
-  background-color: #4aaaa5;
-  color: white;
-
-} */
-
 p {
     align-content: top;
     line-height: 30px;
@@ -114,20 +95,21 @@ textarea {
     border-color: #cccccc;
 }
 
-/* ul {
-  list-style-type: none;
-  width: 100%;
-  margin: 0;
-  padding: 0;
-  overflow: hidden;
-  background: #ffffff;
-  border-bottom: 2px solid #cccccc;
-  font-family: 'Georgia', Times, Georgia, 'Times New Roman', Times, serif;
-} */
-
 .active {
-    position: center;
-    margin-right: 295px;
+    display: flex;
+    height: 100%;
+    align-items: center;
+    float: right;
+    justify-content: center;
+    text-align: center;
+}
+
+.active a {
+    border-right: 1px solid black;
+}
+
+.active a:last-child {
+    border-right: none;
 }
 
 .mainSection { 
@@ -144,40 +126,6 @@ textarea {
     text-align: left;
 }
 
-/* .navBar {
-    width: 150px;
-    margin-left: 295px;
-    float: left;
-    background: #4aaaa5;
-    color: #ffffff;
-    font-weight: bold;
-    display: block;
-    text-align: center;
-    padding: 14px 16px;
-    text-decoration: none;
-}
-
-.navBar2 {
-    margin-right: 280px;
-    text-align: right;
-    float: right;
-    background: #ffffff;
-    color: #777777;
-} */
-
-/* span:not(:first-child)::after {
-    content: " | ";
-    color: #777777;
-    display: inline-block; 
-    float: right;
-}  */
-
-/* .navBar-spacer {
-    content: " | ";
-    color: #777777;
-    float: right;
-} */
-
 .portfolioBox {
     border-left: 1px solid #cccccc;
     border-right: 1px solid #cccccc;
@@ -192,20 +140,30 @@ textarea {
 .topnav {
   margin: 0;
   padding: 0;
+  height: 50px;
+  width: 100%;
   overflow: hidden;
   background: #ffffff;
   border-bottom: 2px solid #cccccc;
   font-family: 'Georgia', Times, Georgia, 'Times New Roman', Times, serif;
 }
 
+.topnav2 {
+    height: 100%;
+    max-width: 960px;
+    margin: 0 auto;
+}
+
 .topnav2 a {
     width: 100px;
-    display: block;
+    justify-content: space-between;
     color: #777777;
     text-align: center;
-    padding: 14px 16px;
     text-decoration: none;
+    display: flex;
+    align-items: center;
     float: right;
+    justify-content: center;
 }
 
 .topnav2 a:hover {
@@ -222,8 +180,10 @@ textarea {
 
 #label {
     float: left;
+    height: 100%;
+    align-items: left;
+    justify-content: center;
     background-color: #4aaaa5;
     color: white;
-    margin-left: 295px;
 }
 
